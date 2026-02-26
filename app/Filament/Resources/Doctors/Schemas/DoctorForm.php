@@ -16,6 +16,7 @@ class DoctorForm
                 TextInput::make('nip'),
                 TextInput::make('sip'),
                 TextInput::make('category'),
+                TextInput::make('poli'),
             ]);
     }
 }
