@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nip')->nullable();
             $table->string('sip')->nullable();
             $table->string('category')->nullable();
+            $table->string('poli')->nullable();
             $table->timestamps();
         });
     }
