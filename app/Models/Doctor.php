@@ -57,4 +57,10 @@ class Doctor extends Model
             ->setPaper('a4', 'landscape');
         return $pdf;
     }
+
+    public function surat()
+    {
+        return $this->hasMany(Surat::class);
+    }
+    
 }
