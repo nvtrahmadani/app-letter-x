@@ -20,6 +20,12 @@
    <br>
    <p>Dokter : </p>
    <p>{{$data->doctor->name}}</p>
+   <br>
+   <div>
+    <p>Scan QR Code Untuk Verifikasi Dokumen</p>
+    {{-- Menggunakan format SVG agar tidak butuh Imagick --}}
+    <img src="data:image/svg+xml;base64,{{ base64_encode(QrCode::format('svg')->size(150)->errorCorrection('H')->generate(route('surat.print', $data->id))) }}">
+   </div>
 </body>
 
 </html>
