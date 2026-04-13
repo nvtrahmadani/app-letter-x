@@ -4,12 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\DB;
 
 class Surat extends Model
 {
-    protected $table = 'surat';
-
     protected $table = 'surat';
 
     protected $fillable = [
